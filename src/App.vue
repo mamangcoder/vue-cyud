@@ -1,18 +1,16 @@
 <script setup>
-import Button from './components/AddButton.vue'
-
-const name = 'Prof.Mamang Coders Eskom'
-//digunakan untuk script setup logic
+// import component
+import Button from './components/Button.vue'
+import Header from './components/Header.vue'
+import Student from './components/Student.vue'
 </script>
 
 <template>
-  <!-- digunakan untuk merender tag tag html -->
-  <h1>Welcome {{ name }}</h1>
-  <Button></Button>
-  <Button></Button>
-  <Button></Button>
-</template>
+  <Header />
 
-<style scoped>
-/* digunakan untuk styling css */
-</style>
+  hello vue <br />
+
+  <!-- pemanggilan/penggunaan component (Using a Component) -->
+  <Student />
+  <Button />
+</template>
